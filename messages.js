@@ -9,16 +9,20 @@
 
 //create 3 arrays to store the different phrases 
 // *** change array names *** maybe make an object to hold the arrays?
-const array1 = [];
-const array2 = [];
-const array3 = [];
+const phrases = {
+    beginning: ['start', 'begin'],
+    middle: ['funny', 'mid'],
+    end: ['message', 'stop']
+};
 
 //this function generates the random message then returns it
 const generateMessage = () => {
-    let message = 'empty';
-    /*
-    write function code here
-    */
+    const randBeginning = Math.floor(Math.random() * phrases.beginning.length);
+    const randMiddle = Math.floor(Math.random() * phrases.middle.length);
+    const randEnd = Math.floor(Math.random() * phrases.end.length);
+
+    const message = `${phrases.beginning[randBeginning]} ${phrases.middle[randMiddle]} ${phrases.end[randEnd]}`;
+    
     return message;
 }
 
