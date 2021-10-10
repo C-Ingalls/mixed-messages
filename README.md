@@ -10,13 +10,13 @@ Practice JavaScript locally. Use Git and Github for version control.
   - [Project Status](#project-status)
 
 ## General Information
-Codecademy's Mixed Messages project to practice using Visual Studio, Git, and Github. 
+Codecademy's Mixed Messages project to practice using Visual Studio, Git, and Github.
 
 ## Technologies Used
 * JavaScript
 
 ## Features
-* logs a randomly generated Vicious Mockery insault
+* logs a randomly generated Story Intro
 
 ## Project Status
 Project is: *in progress*

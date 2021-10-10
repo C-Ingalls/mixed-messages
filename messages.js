@@ -4,14 +4,14 @@
     Use command line
     Develop locally on your computer
 
-    Topic for the messages: vicious mockery insults 
+    Topic for the messages: Story Intro
 */
 
 //create 3 arrays to store the different phrases 
 // *** change array names *** maybe make an object to hold the arrays?
 const phrases = {
-    beginning: ['start', 'begin'],
-    middle: ['funny', 'mid'],
+    beginning: ['You smell', 'begin'],
+    middle: ['like', 'mid'],
     end: ['message', 'stop']
 };
 
