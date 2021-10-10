@@ -10,9 +10,9 @@
 //create 3 arrays to store the different phrases 
 // *** change array names *** maybe make an object to hold the arrays?
 const phrases = {
-    beginning: ['You smell', 'begin'],
-    middle: ['like', 'mid'],
-    end: ['message', 'stop']
+    beginning: ['Once apon a time', 'Previously', 'Last friday,', 'Last night,', 'Up next,', 'Today,',],
+    middle: ['in a forest', 'on a planet far away', 'in a castle', 'in a fortress', 'somewhere in space', 'in a medow', 'under the sea', 'in a classroom'],
+    end: ['the heros fight againt evil', 'the farmer begs for more time', 'the villain prepares his minions for war']
 };
 
 //this function generates the random message then returns it
@@ -21,7 +21,7 @@ const generateMessage = () => {
     const randMiddle = Math.floor(Math.random() * phrases.middle.length);
     const randEnd = Math.floor(Math.random() * phrases.end.length);
 
-    const message = `${phrases.beginning[randBeginning]} ${phrases.middle[randMiddle]} ${phrases.end[randEnd]}`;
+    const message = `${phrases.beginning[randBeginning]} ${phrases.middle[randMiddle]}, ${phrases.end[randEnd]}.`;
     
     return message;
 }
