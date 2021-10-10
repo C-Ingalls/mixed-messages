@@ -19,4 +19,4 @@ Codecademy's Mixed Messages project to practice using Visual Studio, Git, and Gi
 * logs a randomly generated Story Intro
 
 ## Project Status
-Project is: *in progress*
+Project is: *complete*
