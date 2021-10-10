@@ -7,12 +7,11 @@
     Topic for the messages: Story Intro
 */
 
-//create 3 arrays to store the different phrases 
-// *** change array names *** maybe make an object to hold the arrays?
+//create an object containing 3 arrays to store the different phrases
 const phrases = {
-    beginning: ['Once apon a time', 'Previously', 'Last friday,', 'Last night,', 'Up next,', 'Today,',],
+    beginning: ['Once apon a time', 'Previously', 'Last friday', 'Last night', 'Up next', 'Today',],
     middle: ['in a forest', 'on a planet far away', 'in a castle', 'in a fortress', 'somewhere in space', 'in a medow', 'under the sea', 'in a classroom'],
-    end: ['the heros fight againt evil', 'the farmer begs for more time', 'the villain prepares his minions for war']
+    end: ['the heros fight againt evil', 'the farmer begs for more time', 'the villain prepares his minions for war', 'some guy is doing dishes']
 };
 
 //this function generates the random message then returns it
@@ -21,10 +20,10 @@ const generateMessage = () => {
     const randMiddle = Math.floor(Math.random() * phrases.middle.length);
     const randEnd = Math.floor(Math.random() * phrases.end.length);
 
-    const message = `${phrases.beginning[randBeginning]} ${phrases.middle[randMiddle]}, ${phrases.end[randEnd]}.`;
+    const message = `${phrases.beginning[randBeginning]}, ${phrases.middle[randMiddle]}, ${phrases.end[randEnd]}.`;
     
     return message;
 }
 
-// log the message
+// log the messag
 console.log(generateMessage());
